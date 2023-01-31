@@ -3,7 +3,6 @@
 <p *ngIf="toDisplay">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate obcaecati tenetur nemo saepe. Suscipit voluptas eos cupiditate vitae quas, quo in similique quia sit officiis sed ipsam accusantium corrupti aut amet, explicabo tenetur? Dolore impedit quam quibusdam, laboriosam doloribus alias quidem ipsa voluptatem iusto reprehenderit optio, voluptatum tenetur? Nesciunt voluptatum necessitatibus harum neque nihil consectetur omnis obcaecati, modi sapiente eum, vero enim repudiandae laboriosam placeat, itaque veritatis. Delectus, aliquid iure? Harum modi, sed mollitia, accusamus ducimus fugiat nemo, recusandae labore quod doloribus eveniet impedit assumenda cupiditate voluptas. Omnis id nostrum doloremque quaerat magnam! Ea sit ad nulla illo ratione. At.</p>
 </section>
 <!-- <p>Number of clicks: {{ count }}</p> -->
-
-<div *ngFor="let item of clickLog">
-    <p>{{ item }} </p>
+<div *ngFor="let item of clickLog" [ngStyle]="{'background-color' : item >= 5 ? 'black' : 'white'}">
+    <p [ngClass]="{'changeText': item >= 5}">{{ item }} </p>
 </div>
