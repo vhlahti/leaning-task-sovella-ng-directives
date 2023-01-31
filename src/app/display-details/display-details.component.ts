@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./display-details.component.css']
 })
 export class DisplayDetailsComponent {
+  toDisplay = true;
+
+  toggleData() {
+    this.toDisplay = !this.toDisplay;
+  }
+
+ 
 
 }
