@@ -8,15 +8,30 @@ import { Component } from '@angular/core';
 export class DisplayDetailsComponent {
   toDisplay = true;
   count: number = 0;
-  clickLog: number[] = [];
+  clickLog: any = [];
+  listOfDates: Date[] = [];
 
   toggleData() {
     this.toDisplay = !this.toDisplay;
   }
 
-  saveClicks(): void{
-    this.count++
+  // v.1 - display numbers
+
+ /*
+
+  saveClicks() {
+    this.count++;
     this.clickLog.push(this.count);
     }
+  
+   */
 
+  // v.2 - display time stamp
+
+  saveClicks() {
+    this.count++;
+    this.clickLog.push(this.count);
+    this.listOfDates.push(new Date());
+    }
+  
 }

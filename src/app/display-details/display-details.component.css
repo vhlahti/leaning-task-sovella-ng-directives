@@ -1,3 +1,22 @@
+* {
+    display: grid;
+    justify-items: center;
+}
+button {
+    display: inline-block;
+    background-color: #EED484;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.displayBox {
+    background-color: #D5D8D9;
+    border-radius: 5px;
+    padding: 1rem;
+    max-width: 500px;
+}
 .changeText {
-    color: white;
+    color: white; 
+}
+.logBox {
+    margin: 0.5rem;
 }
