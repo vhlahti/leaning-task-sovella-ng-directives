@@ -7,11 +7,16 @@ import { Component } from '@angular/core';
 })
 export class DisplayDetailsComponent {
   toDisplay = true;
+  count: number = 0;
+  clickLog: number[] = [];
 
   toggleData() {
     this.toDisplay = !this.toDisplay;
   }
 
- 
+  saveClicks(): void{
+    this.count++
+    this.clickLog.push(this.count);
+    }
 
 }
