@@ -17,6 +17,7 @@ button {
 .changeText {
     color: white; 
 }
-.logBox {
+.logBox p {
     margin: 0.5rem;
+    width: 500px;
 }
